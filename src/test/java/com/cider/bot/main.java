@@ -1,9 +1,6 @@
 package com.cider.bot;
 
-import java.math.BigDecimal;
 import org.web3j.crypto.Hash;
-import org.web3j.utils.Convert;
-import org.web3j.utils.Convert.Unit;
 
 public class main {
 
