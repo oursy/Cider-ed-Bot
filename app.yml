@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  app:
+    image: cider/bot:0.0.2-SNAPSHOT
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/logs/
+    ports:
+      - "19021:8080"

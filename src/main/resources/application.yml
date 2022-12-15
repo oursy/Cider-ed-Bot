@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: Cider'ed-Bot
+
+discord:
+  enable: ${DISCORD_ENABLE:true}
+  enable-proxy: ${DISCORD_PROXY:true}
+  token: ${DISCORD_TOKEN:xxxxx}
+  proxy:
+    port: ${DISCORD_PROXY_PORT:7890}
+    host: ${DISCORD_PROXY_HOST:127.0.0.1}
+  text-channel-map:
+    cider: ${CIDER_CHANNEL_ID:xxx}
+
+w3j:
+  ws-url: ${W3_WS_URL:wss://eth-mainnet.g.alchemy.com/v2/xxxx}
+  http-url: ${W3_HTTP_URL:https://eth-mainnet.g.alchemy.com/v2/xxxx}
+  proxy:
+    host: ${PROXY_HOST:127.0.0.1}
+    port: ${PROXY_PORT:7890}
+    enable: ${PROXY_ENABLE:true}
+
+
+logging:
+  level:
+    org.web3j: error
+    west: info
+    org.springframework.web: debug
+  register-shutdown-hook: true
+  logback:
+    rollingpolicy:
+      max-history: ${LOG_FILE_MAX_HISTORY:2}
+      clean-history-on-start: true
+      max-file-size: ${LOG_FILE_MAX_SIZE:2048MB}
+      total-size-cap: ${LOG_FILE_TOTAL_SIZE:4096MB} # 1G
+  file:
+    name: logs/${spring.application.name}.log
+
+application:
+  cider:
+    contract: '0xcB91F4521Fc43d4B51586E69F7145606b926b8D4'
+    gear-sold: '0x117920fac7ba5dc9e489e8d5f3fee62249486ce5ed4c58c22dcf3251093bd5e0'
+    gear-bought: '0x46332796c574e705335739d2b1580edfaaf3041fc96a30e95b91d41429745f14'
+    lp-claimed: '0xc1399367677f20c73e6096c86315312f6a73024f9b6914f00b7454be220b4764'
