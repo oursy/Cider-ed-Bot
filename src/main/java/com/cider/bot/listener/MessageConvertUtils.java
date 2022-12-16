@@ -1,4 +1,4 @@
-package com.cider.bot.config.listener;
+package com.cider.bot.listener;
 
 import java.util.ArrayList;
 import java.util.HashMap;

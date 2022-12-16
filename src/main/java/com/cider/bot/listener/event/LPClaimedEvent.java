@@ -1,6 +1,7 @@
-package com.cider.bot.config.listener.event;
+package com.cider.bot.listener.event;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,13 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class GearSoldEvent {
+public class LPClaimedEvent {
 
   private String txId;
 
-  private String seller;
+  private String contributor;
 
   private BigDecimal amount;
-
-  private BigDecimal shearedAmount;
 }

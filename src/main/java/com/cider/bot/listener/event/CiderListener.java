@@ -1,10 +1,10 @@
-package com.cider.bot.config.listener.event;
+package com.cider.bot.listener.event;
 
 import com.cider.bot.config.AsyncEventListener;
 import com.cider.bot.config.discord.DiscordProperties;
 import com.cider.bot.config.discord.DiscordProperties.NotificationType;
 import com.cider.bot.config.discord.JdaComponent;
-import com.cider.bot.config.listener.MessageConvertUtils;
+import com.cider.bot.listener.MessageConvertUtils;
 import java.text.NumberFormat;
 import java.time.OffsetDateTime;
 import java.util.List;

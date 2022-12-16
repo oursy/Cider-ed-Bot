@@ -1,9 +1,9 @@
 package com.cider.bot;
 
 import com.cider.bot.config.discord.JdaComponent;
-import com.cider.bot.config.listener.event.GearBoughtEvent;
-import com.cider.bot.config.listener.event.GearSoldEvent;
-import com.cider.bot.config.listener.event.LPClaimedEvent;
+import com.cider.bot.listener.event.GearBoughtEvent;
+import com.cider.bot.listener.event.GearSoldEvent;
+import com.cider.bot.listener.event.LPClaimedEvent;
 import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;

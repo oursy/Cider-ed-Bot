@@ -1,10 +1,10 @@
-package com.cider.bot.config.listener;
+package com.cider.bot.listener;
 
 import com.cider.bot.config.ApplicationProperties;
 import com.cider.bot.config.ApplicationProperties.Cider;
-import com.cider.bot.config.listener.event.GearBoughtEvent;
-import com.cider.bot.config.listener.event.GearSoldEvent;
-import com.cider.bot.config.listener.event.LPClaimedEvent;
+import com.cider.bot.listener.event.GearBoughtEvent;
+import com.cider.bot.listener.event.GearSoldEvent;
+import com.cider.bot.listener.event.LPClaimedEvent;
 import com.cider.bot.config.w3j.WebSocketClient;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
