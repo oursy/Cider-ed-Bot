@@ -1,10 +1,14 @@
 ## Cider'ed Bot
 
-### how a bot ia dded
+Cidered’ed Bot listens to fair-trading sends an event and notifies Discord
 
-https://www.xda-developers.com/how-to-create-discord-bot/
+### Create Discord App Bot
+
+https://discord.com/developers/applications
 
 Replace **DISCORD_TOKEN** in .env
+
+created in Discord notify TextChannel,Record Channel ID to replace CIDER_CHANNEL_ID in .env
 
 ### how to run
 
